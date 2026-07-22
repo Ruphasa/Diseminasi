@@ -1,0 +1,32 @@
+---
+interface Props {
+  className?: string;
+  intensity?: 'light' | 'medium' | 'heavy' | 'dark';
+  border?: boolean;
+  glow?: boolean;
+}
+
+const { className = "", intensity = "medium", border = true, glow = false } = Astro.props;
+
+const styles = {
+  light: 'background: rgba(255,255,255,0.25); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);',
+  medium: 'background: rgba(255,255,255,0.40); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);',
+  heavy: 'background: rgba(255,255,255,0.52); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);',
+  dark: 'background: rgba(17,17,17,0.65); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); color: #FFFFFF;',
+}[intensity];
+
+const borderStyle = border 
+  ? (intensity === 'dark' 
+      ? 'border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 12px 40px rgba(0,0,0,0.3);' 
+      : 'border: 1px solid rgba(255,255,255,0.7); box-shadow: 0 12px 36px rgba(0,0,0,0.08), inset 0 1px 1px rgba(255,255,255,0.9);')
+  : '';
+
+const glowClass = glow ? 'anim-pulse' : '';
+---
+
+<div 
+  class={`rounded-3xl overflow-hidden ${glowClass} ${className}`}
+  style={`${styles} ${borderStyle}`}
+>
+  <slot />
+</div>
