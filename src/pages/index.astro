@@ -332,20 +332,28 @@ import GlassCard from '../components/GlassCard.astro';
     <!-- SLIDE 10: Thank You (Clean Asymmetric Left Title & Subtle Bottom Right Watermark) -->
     <Slide id="slide-10" align="custom">
       <div class="h-full w-full flex flex-col justify-between p-12 md:p-20 max-w-7xl mx-auto relative">
-        <div class="my-auto max-w-2xl">
-          <span class="px-4 py-1.5 bg-inka-red text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6 inline-block anim-slide-up opacity-0 shadow-md">
-            Selesai
-          </span>
-          <h1 class="text-7xl md:text-9xl font-black text-inka-black tracking-tight mb-4 anim-fade-left opacity-0 stagger-1">
-            Terima<br/><span class="text-inka-red">Kasih</span>
-          </h1>
-          <p class="text-3xl text-gray-700 font-semibold anim-slide-up opacity-0 stagger-2">
-            Ada Pertanyaan?
-          </p>
+        <div class="my-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+          <div>
+            <span class="px-4 py-1.5 bg-inka-red text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6 inline-block anim-slide-up opacity-0 shadow-md">
+              Selesai
+            </span>
+            <h1 class="text-7xl md:text-9xl font-black text-inka-black tracking-tight mb-4 anim-fade-left opacity-0 stagger-1">
+              Terima<br/><span class="text-inka-red">Kasih</span>
+            </h1>
+            <p class="text-3xl text-gray-700 font-semibold anim-slide-up opacity-0 stagger-2">
+              Ada Pertanyaan?
+            </p>
+          </div>
+          
+          <div class="anim-fade-right opacity-0 stagger-3 flex justify-end">
+            <div class="relative rounded-3xl overflow-hidden border-4 border-white/60 shadow-2xl bg-white/20 backdrop-blur-sm p-2">
+              <img src="/assets/img/foto_keluarga.png" alt="Tim SIPETA / Keluarga" class="rounded-2xl object-cover max-h-[400px] w-auto shadow-inner" />
+            </div>
+          </div>
         </div>
 
         <!-- Subtle Bottom Right Watermark -->
-        <div class="absolute bottom-8 right-12 flex items-center gap-3 opacity-40 anim-fade-right opacity-0 stagger-3">
+        <div class="absolute bottom-8 right-12 flex items-center gap-3 opacity-40 anim-fade-up opacity-0 stagger-4">
           <img src="/assets/img/LOGOSIPETA.png" alt="SIPETA" class="h-8 object-contain" />
           <span class="text-xs font-mono font-bold text-gray-600">SIPETA © 2026</span>
         </div>
