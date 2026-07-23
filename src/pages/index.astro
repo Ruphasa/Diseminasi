@@ -58,39 +58,11 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 3: Chapter 1 Intro (Left Accent + Right Image Placeholder) -->
+    <!-- SLIDE 3: Before / After (Asymmetric Staggered Split Screen) -->
     <Slide id="slide-3" align="custom">
-      <div class="h-full w-full flex items-center justify-between p-8 md:p-20 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
-          
-          <!-- Left Content with Red Accent Line -->
-          <div class="md:col-span-7 flex items-stretch gap-8">
-            <div class="w-3 bg-inka-red rounded-full anim-grow-v"></div>
-            <div class="flex flex-col justify-center space-y-4">
-              <p class="text-xl md:text-2xl text-inka-gray uppercase tracking-widest font-bold anim-fade-left opacity-0 stagger-1">
-                Bagian Satu
-              </p>
-              <h2 class="text-6xl md:text-8xl font-black text-inka-black tracking-tight leading-none anim-fade-left opacity-0 stagger-2">
-                Tantangan &<br/><span class="text-inka-red">Solusi</span>
-              </h2>
-            </div>
-          </div>
-
-          <!-- Right Image Container (manual.png: Messy Document Stack) -->
-          <div class="md:col-span-5 anim-fade-right opacity-0 stagger-3">
-            <div class="relative h-80 rounded-3xl overflow-hidden border border-white/40 bg-white/30 backdrop-blur-xl shadow-2xl p-4 flex items-center justify-center">
-              <img src="/assets/img/manual.png" alt="Dokumen Manual Berantakan" class="w-full h-full object-cover rounded-2xl shadow-md" />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </Slide>
-
-    <!-- SLIDE 4: Before / After (Asymmetric Staggered Split Screen) -->
-    <Slide id="slide-4" align="custom">
       <div class="h-full w-full flex flex-col justify-center max-w-7xl mx-auto p-6">
-        <h2 class="text-4xl font-extrabold text-inka-black mb-8 anim-slide-up opacity-0">Perubahan Paradigma</h2>
+        <span class="text-sm font-bold text-inka-red uppercase tracking-widest mb-2 block anim-slide-up opacity-0">Bagian Satu - Tantangan & Solusi</span>
+        <h2 class="text-4xl font-extrabold text-inka-black mb-8 anim-slide-up opacity-0 stagger-1">Perubahan Paradigma</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div class="md:col-span-5 md:-translate-y-4">
@@ -123,8 +95,8 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 5: Assets Tracker (Spacious Layered Experience: Top-Right Mockup + Bottom-Left GlassCard) -->
-    <Slide id="slide-5" align="custom">
+    <!-- SLIDE 4: Assets Tracker (Spacious Layered Experience: Top-Right Mockup + Bottom-Left GlassCard) -->
+    <Slide id="slide-4" align="custom">
       <div class="h-full w-full flex items-center justify-center max-w-7xl mx-auto p-4 md:p-8">
         <div class="relative w-full h-[560px] flex flex-col md:block">
           
@@ -174,8 +146,8 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 6: Digital Twins (50/50 Split Vertical with Large Legible Typography) -->
-    <Slide id="slide-6" align="custom" bgImage="/assets/img/slide-3.jpeg" overlayOpacity="bg-black/40">
+    <!-- SLIDE 5: Digital Twins (50/50 Split Vertical with Large Legible Typography) -->
+    <Slide id="slide-5" align="custom" bgImage="/assets/img/slide-3.jpeg" overlayOpacity="bg-black/40">
       <div class="h-full w-full flex flex-col justify-between max-w-7xl mx-auto p-6 md:p-10 gap-6">
         
         <!-- Top Real Mockup Image -->
@@ -213,43 +185,13 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 7: Chapter 2 Intro (Mirror Slide 3: Right Accent + Left Image Placeholder) -->
-    <Slide id="slide-7" align="custom">
-      <div class="h-full w-full flex items-center justify-between p-8 md:p-20 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
-          
-          <!-- Left Image Container (claude thinking.gif: Technology & AI Intelligence with Claude Thinking Animation) -->
-          <div class="md:col-span-5 anim-fade-left opacity-0 stagger-1">
-            <div class="relative h-80 rounded-3xl overflow-hidden border border-white/15 bg-[#141718] backdrop-blur-xl shadow-2xl p-6 flex flex-col items-center justify-center">
-              <img src="/assets/img/claude thinking.gif" alt="Kecerdasan Teknologi Claude AI" class="w-64 md:w-72 h-auto max-h-60 object-contain relative z-10 anim-claude-thinking" />
-            </div>
-          </div>
-
-          <!-- Right Content with Red Accent Line -->
-          <div class="md:col-span-7 flex items-stretch justify-end gap-8 text-right">
-            <div class="flex flex-col justify-center space-y-4">
-              <p class="text-xl md:text-2xl text-inka-gray uppercase tracking-widest font-bold anim-fade-right opacity-0 stagger-2">
-                Bagian Dua
-              </p>
-              <h2 class="text-6xl md:text-8xl font-black text-inka-black tracking-tight leading-none anim-fade-right opacity-0 stagger-3">
-                Optimasi &<br/><span class="text-inka-red">Otomatisasi</span>
-              </h2>
-              <p class="text-xl text-inka-gray font-semibold anim-slide-up opacity-0 stagger-4">(Carryover Projects)</p>
-            </div>
-            <div class="w-3 bg-inka-red rounded-full anim-grow-v"></div>
-          </div>
-
-        </div>
-      </div>
-    </Slide>
-
-    <!-- SLIDE 8: Timeline (Real Native Brand SVGs) -->
-    <Slide id="slide-8" align="custom">
+    <!-- SLIDE 6: Timeline (Real Native Brand SVGs) -->
+    <Slide id="slide-6" align="custom">
       <div class="h-full w-full flex flex-col justify-center max-w-7xl mx-auto p-6">
         <div class="flex justify-between items-end mb-12">
           <div>
-            <span class="text-xs font-bold text-inka-red uppercase tracking-widest">Peningkatan Sistem</span>
-            <h3 class="text-4xl md:text-5xl font-black text-inka-black">Skalabilitas Operasional</h3>
+            <span class="text-xs font-bold text-inka-red uppercase tracking-widest mb-1 block anim-slide-up opacity-0">Bagian Dua - Optimasi & Otomatisasi (Carryover Projects)</span>
+            <h3 class="text-4xl md:text-5xl font-black text-inka-black anim-slide-up opacity-0 stagger-1">Skalabilitas Operasional</h3>
           </div>
           <span class="text-sm font-mono text-gray-400 hidden md:block">04 Enhancements</span>
         </div>
@@ -316,30 +258,13 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 9: Chapter 3 Intro (Fully Symmetrical Card) -->
-    <Slide id="slide-9" align="custom">
-      <div class="h-full w-full flex items-center justify-center relative p-6">
-        <div class="absolute w-[500px] h-[500px] rounded-full bg-inka-red/15 blur-3xl anim-scale-in"></div>
-
-        <div class="w-full max-w-4xl anim-scale-in opacity-0 z-10">
-          <GlassCard intensity="medium" className="p-12 md:p-16 text-center border-none shadow-2xl flex flex-col items-center justify-center mx-auto">
-            <p class="text-xl text-inka-gray tracking-widest uppercase font-bold mb-4">Bagian Tiga</p>
-            <h2 class="text-5xl md:text-7xl font-black text-inka-red tracking-tight leading-none mb-6">
-              Menyempurnakan<br/><span class="text-inka-black">Pengalaman</span>
-            </h2>
-            <p class="text-2xl text-gray-700 font-semibold max-w-lg">Minor Features & UI/UX Polish</p>
-          </GlassCard>
-        </div>
-      </div>
-    </Slide>
-
-    <!-- SLIDE 10: UI/UX & QoL (Enlarged Cards and Typography) -->
-    <Slide id="slide-10" align="custom">
+    <!-- SLIDE 7: UI/UX & QoL (Enlarged Cards and Typography) -->
+    <Slide id="slide-7" align="custom">
       <div class="h-full w-full flex flex-col justify-center max-w-7xl mx-auto p-6">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           
           <div class="md:col-span-5 anim-fade-left opacity-0">
-            <span class="text-xs font-bold text-inka-red uppercase tracking-widest mb-2 block">Quality of Life</span>
+            <span class="text-xs font-bold text-inka-red uppercase tracking-widest mb-2 block">Bagian Tiga - Menyempurnakan Pengalaman</span>
             <h3 class="text-5xl md:text-6xl font-black text-inka-black leading-tight mb-6">
               Detail Kecil,<br/>Dampak Besar
             </h3>
@@ -368,8 +293,8 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 11: Penutup Intro (HD Image 4 Background) -->
-    <Slide id="slide-11" align="custom" bgImage="/assets/img/slide-4.png" overlayOpacity="bg-black/50">
+    <!-- SLIDE 8: Penutup Intro (HD Image 4 Background) -->
+    <Slide id="slide-8" align="custom" bgImage="/assets/img/slide-4.png" overlayOpacity="bg-black/50">
       <div class="h-full w-full flex items-center justify-center p-6">
         <div class="w-full max-w-5xl anim-scale-in opacity-0">
           <GlassCard intensity="dark" className="p-14 text-center border-b-4 border-b-inka-red shadow-2xl">
@@ -382,8 +307,8 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 12: Quote (Fixed Blank Screen Bug with Wrapper Separation) -->
-    <Slide id="slide-12" align="custom">
+    <!-- SLIDE 9: Quote (Fixed Blank Screen Bug with Wrapper Separation) -->
+    <Slide id="slide-9" align="custom">
       <div class="h-full w-full flex items-center justify-center p-6">
         <div class="w-full max-w-5xl anim-scale-in opacity-0">
           <GlassCard 
@@ -404,8 +329,8 @@ import GlassCard from '../components/GlassCard.astro';
       </div>
     </Slide>
 
-    <!-- SLIDE 13: Thank You (Clean Asymmetric Left Title & Subtle Bottom Right Watermark) -->
-    <Slide id="slide-13" align="custom">
+    <!-- SLIDE 10: Thank You (Clean Asymmetric Left Title & Subtle Bottom Right Watermark) -->
+    <Slide id="slide-10" align="custom">
       <div class="h-full w-full flex flex-col justify-between p-12 md:p-20 max-w-7xl mx-auto relative">
         <div class="my-auto max-w-2xl">
           <span class="px-4 py-1.5 bg-inka-red text-white text-xs font-bold uppercase tracking-wider rounded-full mb-6 inline-block anim-slide-up opacity-0 shadow-md">
@@ -438,14 +363,14 @@ import GlassCard from '../components/GlassCard.astro';
     </div>
     
     <div class="absolute bottom-8 left-8 z-50 text-inka-gray font-mono text-sm font-bold bg-white/40 px-4 py-2 rounded-full backdrop-blur-md border border-white/60 shadow-sm">
-      Slide <span id="current-slide">1</span> / 13
+      Slide <span id="current-slide">1</span> / 10
     </div>
   </main>
 </Layout>
 
 <script>
   let currentSlideIndex = 1;
-  const totalSlides = 13;
+  const totalSlides = 10;
 
   function updateSlides() {
     document.querySelectorAll('.slide').forEach((slide, index) => {
